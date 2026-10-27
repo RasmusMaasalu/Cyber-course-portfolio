@@ -34,3 +34,6 @@
 > Legacy libvirt monolithic daemon
 
 <img width="419" height="41" alt="image" src="https://github.com/user-attachments/assets/c7f340e1-fcb6-40ed-88b0-abc24aa4f291" />
+
+### If everything is setup correctly when you open virt-manager it should look like this.
+<img width="927" height="654" alt="image" src="https://github.com/user-attachments/assets/ceec3566-16b6-4507-a62c-9e501a4fb2fd" />
