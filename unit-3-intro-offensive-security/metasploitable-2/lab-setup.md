@@ -47,21 +47,59 @@
 <img width="329" height="332" alt="image" src="https://github.com/user-attachments/assets/f339638b-687d-4001-b314-4ed7bd188d6e" />
 
 
-> Inside virt-manager click the + icon and import existing image
+> Inside virt-manager click the + icon and import existing image.
 <img width="930" height="652" alt="image" src="https://github.com/user-attachments/assets/51634717-a4b5-4c26-83ba-6ce4beef436c" />
 
 
-> Point to the location of your qcow file and set target operating system to generic linux 2024
+> Point to the location of your qcow file and set target operating system to generic linux 2024.
 <img width="930" height="652" alt="image" src="https://github.com/user-attachments/assets/ccdfd973-89f4-455c-b15e-1042c9488023" />
 
 
-> Name your VM and set "Customize configuration before install" to true
+> Name your VM and set "Customize configuration before install" to true.
 <img width="930" height="652" alt="image" src="https://github.com/user-attachments/assets/de25cf27-15c6-43c4-be84-340b81d10665" />
 
 
-> Inside the configuration menu click on add hardware and under the network tab add the following device and device name
+> Inside the configuration menu click on add hardware and under the network tab add the following device and device name.
 <img width="1278" height="869" alt="image" src="https://github.com/user-attachments/assets/7c4238e8-ff32-46fd-bfd7-f41095c555b4" />
 
+> After applying settings begin the installation, login, and open the terminal to run ifconfig and it should show two devices.
+<img width="1278" height="869" alt="image" src="https://github.com/user-attachments/assets/89fea850-0c72-413c-b831-88a9267669ac" />
 
+
+**2. Metasploitable 2 VM image conversion and importing**
+
+> Metasploitable 2 image
+<img width="396" height="287" alt="image" src="https://github.com/user-attachments/assets/feeb8ff9-0c7e-4492-be5c-3b9ae13a23e1" />
+
+
+> QEMU comes with its own image conversion tool. In the terminal run the following command.
+<img width="695" height="23" alt="image" src="https://github.com/user-attachments/assets/d36c30cf-4e75-4a7b-8685-6e40d1518f26" />
+
+> Now that the image is in qcow format we can import it the same way.
+<img width="929" height="658" alt="image" src="https://github.com/user-attachments/assets/5209a6c4-11ff-4454-a612-0f0ce337baaa" />
+
+
+> Point to the converted image and set target operating system to generic linux 2024.
+<img width="929" height="658" alt="image" src="https://github.com/user-attachments/assets/d71558ae-6ab2-447e-b9d7-25a5d356a50e" />
+
+
+> Adjust the memory and cpu core allocation.
+<img width="928" height="653" alt="image" src="https://github.com/user-attachments/assets/fd5c7974-0b8a-4ff2-9c88-83a252ff24a0" />
+
+
+> Rename the VM and set "Customize configuration before install" to true, and we can also add our bridge device here.
+<img width="928" height="653" alt="image" src="https://github.com/user-attachments/assets/2b827236-f890-4f05-b19b-a8dc8522213d" />
+
+
+> Inside the configuration menu we must change the chipset to i440fx this is necessary for our bridge device driver.
+<img width="617" height="433" alt="image" src="https://github.com/user-attachments/assets/11f313a8-798e-4f00-9249-e7fb16cfd27f" />
+
+
+> Change the bridge device model to "rtl8139".
+<img width="412" height="278" alt="image" src="https://github.com/user-attachments/assets/cf34df32-ef55-42c8-8374-4a10ebab97ac" />
+
+
+>  After applying settings begin the installation, login, and open the terminal to run ifconfig it should show a single network device.
+<img width="1286" height="872" alt="image" src="https://github.com/user-attachments/assets/4866eb5b-40a4-4d00-9668-f24450959779" />
 
 
