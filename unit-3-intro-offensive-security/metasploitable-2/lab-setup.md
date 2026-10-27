@@ -23,11 +23,14 @@
 <img width="609" height="20" alt="image" src="https://github.com/user-attachments/assets/c688a42e-ad86-4790-84d4-3ab04488ed82" />
 
 **3. Add user to required groups**
+
 <img width="304" height="111" alt="image" src="https://github.com/user-attachments/assets/364c39ec-e8c8-4e07-8590-4a631fd538eb" />
 
 **4. Initialize libvirt daemon**
 > Please note that Libvirt version 9.3.0 has swapped to a modular daemon architecture. Older versions use a singular monolithic daemon.
+
 <img width="466" height="213" alt="image" src="https://github.com/user-attachments/assets/c061592c-c6ee-4caa-a04a-acc235abb979" />
 
 > Legacy libvirt monolithic daemon
-> <img width="419" height="41" alt="image" src="https://github.com/user-attachments/assets/c7f340e1-fcb6-40ed-88b0-abc24aa4f291" />
+
+<img width="419" height="41" alt="image" src="https://github.com/user-attachments/assets/c7f340e1-fcb6-40ed-88b0-abc24aa4f291" />
