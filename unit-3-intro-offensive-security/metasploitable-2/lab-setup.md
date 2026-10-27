@@ -19,19 +19,23 @@
 
 > Example for a Debian based system
 <img width="888" height="61" alt="image" src="https://github.com/user-attachments/assets/59671912-2065-415a-8186-c69a7d5949f0" />
-
+&nbsp;
+&nbsp;
 > On a Gentoo based system
 <img width="609" height="20" alt="image" src="https://github.com/user-attachments/assets/c688a42e-ad86-4790-84d4-3ab04488ed82" />
-
+&nbsp;
+&nbsp;
 **3. Add user to required groups**
 
 <img width="304" height="111" alt="image" src="https://github.com/user-attachments/assets/364c39ec-e8c8-4e07-8590-4a631fd538eb" />
-
+&nbsp;
+&nbsp;
 **4. Initialize libvirt daemon**
 > Please note that Libvirt version 9.3.0 has swapped to a modular daemon architecture. Older versions use a singular monolithic daemon.
 
 <img width="466" height="213" alt="image" src="https://github.com/user-attachments/assets/c061592c-c6ee-4caa-a04a-acc235abb979" />
-
+&nbsp;
+&nbsp;
 > Legacy libvirt monolithic daemon
 
 <img width="419" height="41" alt="image" src="https://github.com/user-attachments/assets/c7f340e1-fcb6-40ed-88b0-abc24aa4f291" />
@@ -81,14 +85,14 @@
 
 &nbsp;
 &nbsp;
-**4. Downloading Metasploitable 2 VM image**
+### **4. Downloading Metasploitable 2 VM image**
 
 > Metasploitable 2 image
 <img width="396" height="287" alt="image" src="https://github.com/user-attachments/assets/feeb8ff9-0c7e-4492-be5c-3b9ae13a23e1" />
 
 &nbsp;
 &nbsp;
-### **5. Converting Metasploitable.vmdk to Metasploitable.qcow**
+**5. Converting Metasploitable.vmdk to Metasploitable.qcow**
 > QEMU comes with its own image conversion tool. In the terminal run the following command.
 <img width="695" height="23" alt="image" src="https://github.com/user-attachments/assets/d36c30cf-4e75-4a7b-8685-6e40d1518f26" />
 
