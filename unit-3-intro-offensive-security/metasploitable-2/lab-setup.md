@@ -37,3 +37,24 @@
 
 ### If everything is setup correctly when you open virt-manager it should look like this.
 <img width="927" height="654" alt="image" src="https://github.com/user-attachments/assets/ceec3566-16b6-4507-a62c-9e501a4fb2fd" />
+
+## **Step 2: Importing Metasploitable 2 and Kali Linux**
+### Now that we have QEMU installed and working we are going to go over importing the official Kali linux VM and converting metasploitable 2 to qcow format.
+
+**1. Downloading and importing the official qcow image for Kali linux**
+
+> Kali linux qemu qcow image
+<img width="329" height="332" alt="image" src="https://github.com/user-attachments/assets/f339638b-687d-4001-b314-4ed7bd188d6e" />
+
+> Inside virt-manager click the + icon and import existing image
+<img width="930" height="652" alt="image" src="https://github.com/user-attachments/assets/51634717-a4b5-4c26-83ba-6ce4beef436c" />
+
+> Point to the location of your qcow file and set target operating system to generic linux 2024
+<img width="930" height="652" alt="image" src="https://github.com/user-attachments/assets/ccdfd973-89f4-455c-b15e-1042c9488023" />
+
+> Name your VM and set "Customize configuration before install" to true
+<img width="930" height="652" alt="image" src="https://github.com/user-attachments/assets/de25cf27-15c6-43c4-be84-340b81d10665" />
+
+
+
+
