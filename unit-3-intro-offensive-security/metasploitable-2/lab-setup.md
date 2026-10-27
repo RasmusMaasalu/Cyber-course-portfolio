@@ -42,12 +42,14 @@
 ## **Step 2: Importing Metasploitable 2 and Kali Linux**
 ### Now that we have QEMU installed and working we are going to go over importing the official Kali linux VM and converting metasploitable 2 to qcow format.
 
-**1. Downloading and importing the official qcow image for Kali linux**
+**1. Downloading the official qcow image for Kali linux**
 
 > Kali linux qemu qcow image
 <img width="329" height="332" alt="image" src="https://github.com/user-attachments/assets/f339638b-687d-4001-b314-4ed7bd188d6e" />
 
 &nbsp;
+**2. Import the Kali linux image inside virt-manager**
+
 > Inside virt-manager click the + icon and import existing image.
 <img width="930" height="652" alt="image" src="https://github.com/user-attachments/assets/51634717-a4b5-4c26-83ba-6ce4beef436c" />
 
@@ -60,6 +62,7 @@
 <img width="930" height="652" alt="image" src="https://github.com/user-attachments/assets/de25cf27-15c6-43c4-be84-340b81d10665" />
 
 &nbsp;
+**3. Additional configuration before install**
 > Inside the configuration menu click on add hardware and under the network tab add the following device and device name.
 <img width="1278" height="869" alt="image" src="https://github.com/user-attachments/assets/7c4238e8-ff32-46fd-bfd7-f41095c555b4" />
 
@@ -68,15 +71,17 @@
 <img width="1278" height="869" alt="image" src="https://github.com/user-attachments/assets/89fea850-0c72-413c-b831-88a9267669ac" />
 
 &nbsp;
-**2. Metasploitable 2 VM image conversion and importing**
+**4. Downloading Metasploitable 2 VM image**
 
 > Metasploitable 2 image
 <img width="396" height="287" alt="image" src="https://github.com/user-attachments/assets/feeb8ff9-0c7e-4492-be5c-3b9ae13a23e1" />
 
 &nbsp;
+**5. Converting Metasploitable.vmdk to Metasploitable.qcow**
 > QEMU comes with its own image conversion tool. In the terminal run the following command.
 <img width="695" height="23" alt="image" src="https://github.com/user-attachments/assets/d36c30cf-4e75-4a7b-8685-6e40d1518f26" />
 
+**6. Import the converted Metasploitable 2 image**
 > Now that the image is in qcow format we can import it the same way.
 <img width="929" height="658" alt="image" src="https://github.com/user-attachments/assets/5209a6c4-11ff-4454-a612-0f0ce337baaa" />
 
@@ -93,6 +98,7 @@
 <img width="928" height="653" alt="image" src="https://github.com/user-attachments/assets/2b827236-f890-4f05-b19b-a8dc8522213d" />
 
 &nbsp;
+**3. Additional configuration before install**
 > Inside the configuration menu we must change the chipset to i440fx this is necessary for our bridge device driver.
 <img width="617" height="433" alt="image" src="https://github.com/user-attachments/assets/11f313a8-798e-4f00-9249-e7fb16cfd27f" />
 
