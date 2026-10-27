@@ -99,7 +99,7 @@
 <img width="412" height="278" alt="image" src="https://github.com/user-attachments/assets/cf34df32-ef55-42c8-8374-4a10ebab97ac" />
 
 
->  After applying settings begin the installation, login, and open the terminal to run ifconfig it should show a single network device.
+>  After applying settings begin the installation, login, and run ifconfig and it should show a single network device.
 <img width="1286" height="872" alt="image" src="https://github.com/user-attachments/assets/4866eb5b-40a4-4d00-9668-f24450959779" />
 
 
