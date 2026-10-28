@@ -124,9 +124,25 @@
 > <img width="1284" height="873" alt="image" src="https://github.com/user-attachments/assets/35e316e7-1f4f-47f2-91a9-d9ea67872722" />
 
 > Mount the partitions to /mnt and /mnt/boot
+
 > Note the identifiers for the drives have changed to /dev/vdaX
 <img width="1284" height="873" alt="image" src="https://github.com/user-attachments/assets/bf76b6ef-6462-4152-8faa-95dad5f158a0" />
 
 > Using ```arch-chroot``` chroot into the mounted filesystem
+
 > Note that the previously copied DNS information is still present.
 <img width="1284" height="873" alt="image" src="https://github.com/user-attachments/assets/f224df8a-579e-4d09-9f37-e26cdee835c5" />
+
+> Add non root user to superuser group
+<img width="1284" height="873" alt="image" src="https://github.com/user-attachments/assets/a1943f1b-e6ab-4868-85fe-ada2937f7891" />
+
+> Install network-manager to for simple network configuration.
+<img width="1284" height="873" alt="image" src="https://github.com/user-attachments/assets/7858caca-5772-4c33-9685-ab24c1824dec" />
+
+> Exit and reboot.
+
+> Note Linux mint automatically unmounts any mounted block device.
+<img width="1284" height="873" alt="image" src="https://github.com/user-attachments/assets/578a967e-54c0-4663-b111-2c1842bb8e9a" />
+
+> Boot back into Debian and ensure everything is working.
+<img width="1284" height="873" alt="image" src="https://github.com/user-attachments/assets/e483ed79-b8dd-49f3-a364-49caa048b025" />
