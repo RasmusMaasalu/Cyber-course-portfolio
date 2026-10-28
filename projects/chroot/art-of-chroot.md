@@ -42,5 +42,6 @@
 ## **Using the chroot environment to configure and deploy a functional system.**
 > We have now chrooted into our Debian trixie filesystem. Let's go over an example use case of chroot by configuring and deploying our Debian system.
 
-> Let's first link our timezone data and system clock. Note! ```hwclock --systohc``` requires the package ```util-linux-extra```
+> Let's first link our timezone data and system clock.
+> Note ```hwclock --systohc``` requires the package ```util-linux-extra```
 <img width="740" height="53" alt="image" src="https://github.com/user-attachments/assets/51eacb02-275b-4446-a2e1-c5c09b380801" />
