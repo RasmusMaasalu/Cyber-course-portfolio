@@ -25,3 +25,12 @@
 > Mount the root partition to /mnt and lets use debootstrap to bootstrap a full Debian trixie filesystem
 
 <img width="390" height="68" alt="image" src="https://github.com/user-attachments/assets/514f39a9-ced2-4a85-ba29-bdd93aeda97d" />
+
+**2. Chrooting into our Debian rootfs**
+> Before we Chroot we must bind the necessary directories and also copy over our host's DNS configuration.
+
+<img width="529" height="136" alt="image" src="https://github.com/user-attachments/assets/6735e825-4364-4972-9bcc-d87908f70bb4" />
+
+> Now lets chroot into our mounted rootfs with bash as our shell and lets call /etc/profile and export a basic shell prompt to show that we are in chroot.
+
+<img width="595" height="73" alt="image" src="https://github.com/user-attachments/assets/e9fca377-f08b-491d-b54d-e51e70be6c58" />
