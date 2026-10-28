@@ -6,7 +6,7 @@
 > In this demonstration let's create a virtual Debian trixie filesystem that we can chroot into.
 
 **1. Creating and mounting a virtual disk.**
-> Lets use dd to create a virtual disk in a raw .img format.
+> Use dd to create a virtual disk in a raw .img format.
 
 <img width="580" height="100" alt="image" src="https://github.com/user-attachments/assets/47765eb1-e010-4ec6-8a55-f74261fd4ed7" />
 
