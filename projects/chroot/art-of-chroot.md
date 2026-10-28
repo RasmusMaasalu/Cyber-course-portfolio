@@ -46,3 +46,11 @@
 
 > Note ```hwclock --systohc``` requires the package ```util-linux-extra```
 <img width="740" height="53" alt="image" src="https://github.com/user-attachments/assets/51eacb02-275b-4446-a2e1-c5c09b380801" />
+
+> Our Debian system does not have any locales installed by default. Let's fix that.
+<img width="509" height="108" alt="image" src="https://github.com/user-attachments/assets/e1d62b96-8842-47e8-a6f9-c6fb71ca57d8" />
+
+> Debian has its own tool for easily configuring locales. Let's set it to our locale of choice.
+
+> The user will be prompted to an ncurses style menu where you must select your locale and confirm.
+<img width="764" height="514" alt="image" src="https://github.com/user-attachments/assets/321746be-910a-4221-a402-05875f2b99ea" />
