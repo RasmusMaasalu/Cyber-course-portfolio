@@ -136,7 +136,7 @@
 > Add non root user to superuser group
 <img width="1284" height="873" alt="image" src="https://github.com/user-attachments/assets/a1943f1b-e6ab-4868-85fe-ada2937f7891" />
 
-> Install network-manager to for simple network configuration.
+> Install network-manager for simple network configuration.
 <img width="1284" height="873" alt="image" src="https://github.com/user-attachments/assets/7858caca-5772-4c33-9685-ab24c1824dec" />
 
 > Exit and reboot.
@@ -146,3 +146,6 @@
 
 > Boot back into Debian and ensure everything is working.
 <img width="1284" height="873" alt="image" src="https://github.com/user-attachments/assets/e483ed79-b8dd-49f3-a364-49caa048b025" />
+
+## **Chroot usage summary.**
+> We have successfully used chroot to deploy a Debian trixie machine and even performed emergency system recovery via liveCD, and with the use of a helper script. Entering chroot removed all the hassle of mounting essential directories. 
