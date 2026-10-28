@@ -66,3 +66,67 @@
 > Install the latest stable Debian kernel.
 <img width="1265" height="125" alt="image" src="https://github.com/user-attachments/assets/36fcc594-cdde-4176-8398-ed8291fafa20" />
 
+> Install grub for an amd64 UEFI system.
+<img width="1057" height="170" alt="image" src="https://github.com/user-attachments/assets/7517ccd9-2248-4c15-b35e-40525aea33fa" />
+
+> Use ```--removable``` as the system isn't booted on any UEFI firmware yet.
+<img width="641" height="75" alt="image" src="https://github.com/user-attachments/assets/086a7045-f85d-4ff4-9a86-58a2ecce64b5" />
+
+> Generate the grub config file
+<img width="686" height="171" alt="image" src="https://github.com/user-attachments/assets/f4f0043a-7b66-4a6c-9e8e-05d62258662f" />
+
+**4. Pre-boot setup.**
+> The system is still missing it's /etc/fstab file, a non root user, and essential packages.
+
+> List the UUID's of your block devices
+<img width="915" height="89" alt="image" src="https://github.com/user-attachments/assets/a9b3592c-57fe-4ccb-bd44-014dd92d9ca2" />
+
+> Create an fstab file either manually or use ```genfstab``` from the ```arch-install-scripts``` package.
+<img width="1486" height="228" alt="image" src="https://github.com/user-attachments/assets/8b63593e-d446-4c03-ab1b-6794eed30a5b" />
+
+> Install some basic packages.
+<img width="502" height="108" alt="image" src="https://github.com/user-attachments/assets/97144aff-90cf-4ec5-9d7d-6329f4b6e75a" />
+
+> Create a non root user.
+<img width="483" height="86" alt="image" src="https://github.com/user-attachments/assets/5f8ba044-a36e-4ea1-b1ac-b0972081f8a3" />
+
+**5. Exiting and booting**
+> Exit the chroot environment and unmount /mnt recursively.
+<img width="327" height="54" alt="image" src="https://github.com/user-attachments/assets/23b807ed-227c-40ab-ad52-00d69f1c57aa" />
+
+> Inside virt-manager import the virtual disk and set target operating system to Debian 13.
+<img width="933" height="654" alt="image" src="https://github.com/user-attachments/assets/4aba4f5a-2103-47fc-881d-0638067ddbee" />
+
+> Set "customize configuration before install" to true.
+<img width="933" height="654" alt="image" src="https://github.com/user-attachments/assets/9d8e2656-9ff5-4a79-b41f-e81683511e55" />
+
+> Change firmware to "UEFI".
+> Note if secureboot is enabled inside your virtualized firmware enter setup and uncheck "attempt secureboot"
+<img width="1279" height="870" alt="image" src="https://github.com/user-attachments/assets/bc08ae35-3109-4ef5-9c56-341ee8aae97b" />
+
+> Boot up the Debian machine and login as your non root user.
+<img width="1281" height="872" alt="image" src="https://github.com/user-attachments/assets/caba2cbc-6b78-44e2-a6c4-ad1cce3a756a" />
+
+## **Using chroot for system recovery.**
+> In the previous demonstration we forgot to configure vital components of our system such as network and superuser privileges. Let's simulate the use of a Linux livecd and chroot for system recovery.
+
+**1. Booting into a Linux livecd**
+> Add a bootable livecd to your Debian machine.
+<img width="1281" height="871" alt="image" src="https://github.com/user-attachments/assets/9b44518b-2287-4dab-bb17-bce9f5ee106f" />
+
+> Set boot proper priority.
+<img width="1281" height="871" alt="image" src="https://github.com/user-attachments/assets/1b704d5d-c278-4427-9244-f9985617c6e7" />
+
+**2. Chroot helper script and system recovery**
+> To prevent the hassle of manually binding directories. The previously mentioned ```arch-install-scripts``` comes with a helper script called ```arch-chroot```
+
+> Install the helper script.
+> <img width="1284" height="873" alt="image" src="https://github.com/user-attachments/assets/35e316e7-1f4f-47f2-91a9-d9ea67872722" />
+
+> Mount the partitions to /mnt and /mnt/boot
+> Note the identifiers for the drives have changed to /dev/vdaX
+<img width="1284" height="873" alt="image" src="https://github.com/user-attachments/assets/bf76b6ef-6462-4152-8faa-95dad5f158a0" />
+
+> Using ```arch-chroot``` chroot into the mounted filesystem
+> Note that the previously copied DNS information is still present.
+<img width="1284" height="873" alt="image" src="https://github.com/user-attachments/assets/f224df8a-579e-4d09-9f37-e26cdee835c5" />
