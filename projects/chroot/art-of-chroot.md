@@ -2,10 +2,10 @@
 ## **What is chroot? And how to utilize it.**
 > Chroot (change root) is the method of changing the root directory for the current running process. Essentially, transferring you to the root of another filesystem whilst remaining isolated from the host root filesystem. Its very useful for Linux system recovery, diagnostics and system deployment.
 
-## **How to perform a chroot**
+## **How to perform a chroot.**
 > In this demonstration let's create a virtual Debian trixie filesystem that we can chroot into.
 
-**1. Creating and mounting a virtual disk**
+**1. Creating and mounting a virtual disk.**
 > Lets use dd to create a virtual disk in a raw .img format.
 
 <img width="580" height="100" alt="image" src="https://github.com/user-attachments/assets/47765eb1-e010-4ec6-8a55-f74261fd4ed7" />
@@ -39,4 +39,9 @@
 
 <img width="595" height="73" alt="image" src="https://github.com/user-attachments/assets/01377439-5554-486d-bac7-1b6829f37e69" />
 
-## **Using the chroot environment to configure and deploy a functional system**
+## **Using the chroot environment to configure and deploy a functional system.**
+> We have now chrooted into our Debian trixie filesystem. Let's go over an example use case of chroot by configuring and deploying our Debian system.
+
+> Let's first link our timezone data and system clock.
+```hwclock --systohc``` requires the package ```util-linux-extra```
+<img width="740" height="53" alt="image" src="https://github.com/user-attachments/assets/51eacb02-275b-4446-a2e1-c5c09b380801" />
