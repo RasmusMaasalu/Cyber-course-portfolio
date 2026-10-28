@@ -1,6 +1,6 @@
 # **The art of chrooting.**
 ## **What is chroot? And how to utilize it.**
-### > Chroot (change root) is the method of changing the root directory for the current running process. Essentially, transferring you to the root of another filesystem whilst remaining isolated from the host root filesystem. Its very useful for Linux system recovery, diagnostics and system deployment.
+> Chroot (change root) is the method of changing the root directory for the current running process. Essentially, transferring you to the root of another filesystem whilst remaining isolated from the host root filesystem. Its very useful for Linux system recovery, diagnostics and system deployment.
 
 ## **Basic usage of chroot**
 > In this demonstration lets use chroot to pre-configure a Debian system ready for installation.
