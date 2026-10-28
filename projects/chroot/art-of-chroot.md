@@ -22,16 +22,16 @@
 
 <img width="704" height="287" alt="image" src="https://github.com/user-attachments/assets/31da21e7-1196-476f-a361-51433ff13ff7" />
 
-> Mount the root partition to /mnt and lets use debootstrap to bootstrap a full Debian trixie filesystem.
+> Mount the root partition to /mnt and use debootstrap to bootstrap a full Debian trixie filesystem.
 
 <img width="390" height="68" alt="image" src="https://github.com/user-attachments/assets/514f39a9-ced2-4a85-ba29-bdd93aeda97d" />
 
 **2. Chrooting into our Debian rootfs**
-> Before we run the chroot command we must bind the necessary directories and also copy over our host's DNS configuration.
+> Before running the chroot command the following directories must be bound and the host's DNS configuration should also be copied over.
 
 <img width="529" height="136" alt="image" src="https://github.com/user-attachments/assets/6735e825-4364-4972-9bcc-d87908f70bb4" />
 
-> Now lets chroot into our mounted rootfs with bash as our shell and lets call /etc/profile and export a basic shell prompt to show that we are in chroot.
+> Now chroot into our mounted rootfs with bash as our shell, call /etc/profile and export a basic shell prompt to indicate the chroot environment.
 
 <img width="595" height="73" alt="image" src="https://github.com/user-attachments/assets/e9fca377-f08b-491d-b54d-e51e70be6c58" />
 
@@ -42,15 +42,27 @@
 ## **Using the chroot environment to configure and deploy a functional system.**
 > We have now chrooted into our Debian trixie filesystem. Let's go over an example use case of chroot by configuring and deploying our Debian system.
 
-> Let's first link our timezone data and system clock.
+**1. Setting timezone data and system clock.**
 
 > Note ```hwclock --systohc``` requires the package ```util-linux-extra```
 <img width="740" height="53" alt="image" src="https://github.com/user-attachments/assets/51eacb02-275b-4446-a2e1-c5c09b380801" />
 
-> Our Debian system does not have any locales installed by default. Let's fix that.
+**2. Installing locales and setting hostname.**
+> Our Debian system does not have any locales installed by default.
 <img width="509" height="108" alt="image" src="https://github.com/user-attachments/assets/e1d62b96-8842-47e8-a6f9-c6fb71ca57d8" />
 
-> Debian has its own tool for easily configuring locales. Let's set it to our locale of choice.
+> Debian has its own tool ```dpkg-reconfigure locales``` for configuring locales.
 
-> The user will be prompted to an ncurses style menu where you must select your locale and confirm.
+> The user will be prompted with an ncurses style menu where you must select your locale and confirm.
 <img width="764" height="514" alt="image" src="https://github.com/user-attachments/assets/321746be-910a-4221-a402-05875f2b99ea" />
+
+> Set our hostname into /etc/hostname.
+<img width="519" height="21" alt="image" src="https://github.com/user-attachments/assets/cc6eb714-09b8-4caa-9de0-e35601b0cf4a" />
+
+**3. Installing the Linux kernel and bootloader.**
+> The boot partition isn't mounted. Mount it to the EFI partition so that the kernel and bootloader can be installed.
+<img width="442" height="18" alt="image" src="https://github.com/user-attachments/assets/ab2645da-1834-4bcb-92e2-87d23940652f" />
+
+> Install the latest stable Debian kernel.
+<img width="1265" height="125" alt="image" src="https://github.com/user-attachments/assets/36fcc594-cdde-4176-8398-ed8291fafa20" />
+
