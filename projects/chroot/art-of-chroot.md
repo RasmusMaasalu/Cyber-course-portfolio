@@ -149,3 +149,5 @@ In this demonstration let's create a virtual Debian trixie filesystem that we ca
 
 ## **Chroot usage summary.**
 We have successfully used chroot to deploy a Debian trixie machine and even performed emergency system recovery via liveCD, and with the use of a helper script. Entering chroot removed all the hassle of mounting essential directories. 
+Chroot has various other applications such as setting up minimal isolated Linux environments on your Host without using virtualization or containers like Docker or Podman.
+Additionally QEMU provides an advanced method of chrooting called qemu-chroot which can allow an x86_64 host to have an isolated Linux system for alternative architectures such as ARM or RISC-V. This is commonly used for cross compiling software for non x86_64 processors. 
