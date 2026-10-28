@@ -4,7 +4,7 @@
 
 ## **How to perform a chroot.**
 In this demonstration let's create a virtual Debian trixie filesystem that we can chroot into.
-
+Requirements: Linux host & QEMU with virt-manager.
 **1. Creating and mounting a virtual disk.**
 > Use dd to create a virtual disk in a raw .img format.
 
