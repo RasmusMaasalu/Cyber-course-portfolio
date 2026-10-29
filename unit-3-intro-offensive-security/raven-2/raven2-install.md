@@ -1,26 +1,39 @@
+### **1. Downloading Raven2 VM image**
+
+> Raven2 image
+<img width="461" height="131" alt="image" src="https://github.com/user-attachments/assets/c44c0429-1735-4370-a7a0-2ace86ea1b03" />
+
+
+**3. Converting raven2-disk1.vmdk to raven2-disk1.qcow**
+> Extract the .ova image
+<img width="203" height="109" alt="image" src="https://github.com/user-attachments/assets/1aebd8d1-f956-4a00-8d5e-2ab38a1bccf3" />
+
+> Use qemu-img to convert. In the terminal run the following command.
+<img width="655" height="52" alt="image" src="https://github.com/user-attachments/assets/f0413e40-fc0d-4ca4-8525-548aa02256d0" />
+
 
 > Now that the image is in qcow format we can import it the same way.
-<img width="929" height="658" alt="image" src="https://github.com/user-attachments/assets/5209a6c4-11ff-4454-a612-0f0ce337baaa" />
+<img width="933" height="658" alt="image" src="https://github.com/user-attachments/assets/bb8d172f-404b-426d-86be-bc443504cf61" />
 
-&nbsp;
+
 > Point to the converted image and set target operating system to generic linux 2024.
-<img width="929" height="658" alt="image" src="https://github.com/user-attachments/assets/d71558ae-6ab2-447e-b9d7-25a5d356a50e" />
+<img width="933" height="658" alt="image" src="https://github.com/user-attachments/assets/d71679b8-8f3d-4ad6-bf36-41ae97c1cb14" />
 
 
-&nbsp;  
+  
 > Adjust the memory and cpu core allocation.
-<img width="928" height="653" alt="image" src="https://github.com/user-attachments/assets/fd5c7974-0b8a-4ff2-9c88-83a252ff24a0" />
+<img width="933" height="658" alt="image" src="https://github.com/user-attachments/assets/bb774373-8cbb-444c-9cfd-f88ffa80c8c5" />
 
-&nbsp; 
+
 > Rename the VM and set "Customize configuration before install" to true, and we can also add our bridge device here.
-<img width="928" height="653" alt="image" src="https://github.com/user-attachments/assets/2b827236-f890-4f05-b19b-a8dc8522213d" />
+<img width="933" height="658" alt="image" src="https://github.com/user-attachments/assets/99cf29c5-96da-41eb-8a34-5886c96dbe9a" />
 
-&nbsp; 
+ 
 **3. Additional configuration before install**
 > Inside the configuration menu we must change the chipset to i440fx this is necessary for our bridge device driver.
-<img width="617" height="433" alt="image" src="https://github.com/user-attachments/assets/11f313a8-798e-4f00-9249-e7fb16cfd27f" />
+<img width="1283" height="871" alt="image" src="https://github.com/user-attachments/assets/445d605f-29e3-4f32-8283-2f81ac687811" />
 
-&nbsp;
+
 > Change the bridge device model to "rtl8139".
-<img width="412" height="278" alt="image" src="https://github.com/user-attachments/assets/cf34df32-ef55-42c8-8374-4a10ebab97ac" />
+<img width="1283" height="871" alt="image" src="https://github.com/user-attachments/assets/4d2f92b0-97d0-49a6-aa94-fdd194ce7164" />
 
