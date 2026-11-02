@@ -155,3 +155,5 @@ We have successfully used chroot to deploy a Debian trixie machine and even perf
 Chroot has various other applications such as setting up minimal isolated Linux environments on your Host without using virtualization or containers like Docker or Podman.
 
 Additionally QEMU provides an advanced method of chrooting called qemu-chroot which can allow an x86_64 host to have an isolated Linux system for alternative architectures such as ARM or RISC-V. This is commonly used for cross compiling software for non x86_64 processors. 
+
+SystemD systems come with systemd-nspawn which is a chroot tool that leverages SystemD for improved isolation such as full filesystem hierarchy virtualization, IPC subsystems, process tree and also provides access to its init system inside the chroot environment. It is better used for minimal containerization.
