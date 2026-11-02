@@ -1,3 +1,5 @@
+# Raven 2 Installation on QEMU virt-manager
+
 ### **1. Downloading Raven2 VM image**
 
 > Raven2 image
@@ -37,3 +39,5 @@
 > Change the bridge device model to "rtl8139".
 <img width="1283" height="871" alt="image" src="https://github.com/user-attachments/assets/4d2f92b0-97d0-49a6-aa94-fdd194ce7164" />
 
+> Boot the VM to make sure it works.
+<img width="1286" height="871" alt="image" src="https://github.com/user-attachments/assets/6130fa60-494f-43a7-8edc-86c0558136ce" />
